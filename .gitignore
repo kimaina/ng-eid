@@ -1,0 +1,9 @@
+node_modules
+.tmp
+.sass-cache
+bower_components
+.idea/**
+app/version.json
+dist.tar.gz
+settings.json
+.code

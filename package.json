@@ -1,0 +1,60 @@
+{
+    "name": "openmrsngresource",
+    "private": true,
+    "dependencies": {
+        "angular-environment": "^1.0.3",
+        "karma-html2js-preprocessor": "^0.1.0",
+        "stacktrace-js": "^1.0.1"
+    },
+    "devDependencies": {
+        "chai": "^3.0.0",
+        "autoprefixer-core": "^5.2.1",
+        "grunt": "^0.4.5",
+        "grunt-autoprefixer": "^2.0.0",
+        "grunt-angular-templates": "^1.0.3",
+        "grunt-concurrent": "^1.0.0",
+        "grunt-contrib-clean": "^0.6.0",
+        "grunt-contrib-concat": "^0.5.0",
+        "grunt-contrib-connect": "^0.9.0",
+        "grunt-contrib-copy": "^0.7.0",
+        "grunt-contrib-cssmin": "^0.12.0",
+        "grunt-contrib-htmlmin": "^0.4.0",
+        "grunt-contrib-imagemin": "^1.0.0",
+        "grunt-contrib-jshint": "^0.11.0",
+        "grunt-contrib-uglify": "^0.7.0",
+        "grunt-contrib-watch": "^0.6.1",
+        "grunt-filerev": "^2.1.2",
+        "grunt-google-cdn": "^0.4.3",
+        "grunt-jscs": "^1.8.0",
+        "grunt-karma": "*",
+        "grunt-newer": "^1.1.0",
+        "grunt-ng-annotate": "^0.9.2",
+        "grunt-postcss": "^0.5.5",
+        "grunt-svgmin": "^2.0.0",
+        "grunt-usemin": "^3.0.0",
+        "grunt-wiredep": "^2.0.0",
+        "jit-grunt": "^0.9.1",
+        "karma": "^0.13.0",
+        "karma-chai": "^0.1.0",
+        "karma-chrome-launcher": "^0.2.0",
+        "karma-html-reporter": "^0.2.6",
+        "karma-jasmine": "^0.3.6",
+        "karma-mocha": "^0.2.0",
+        "karma-mocha-reporter": "^1.0.2",
+        "karma-ng-html2js-preprocessor": "^0.1.2",
+        "karma-phantomjs-launcher": "^0.2.1",
+        "karma-sinon": "^1.0.4",
+        "mocha": "^2.2.5",
+        "phantomjs": "^2.1.0",
+        "time-grunt": "^1.0.0",
+        "sinon": "^1.15.4",
+        "jshint-stylish": "^1.0.0"
+    },
+    "engines": {
+        "node": ">=0.10.0"
+    },
+    "scripts": {
+        "test": "grunt test",
+        "commit": "commit-wizard"
+    }
+}
