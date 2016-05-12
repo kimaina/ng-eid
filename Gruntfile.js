@@ -331,7 +331,7 @@ module.exports = function (grunt) {
         options: {
           module: 'ngeid',
           htmlmin: '<%= htmlmin.dist.options %>',
-          usemin: 'scripts/ngEID.js'
+          usemin: 'scripts/ng-eid.js'
         },
         cwd: '<%= yeoman.app %>',
         src: 'views/{,*/}*.html',
