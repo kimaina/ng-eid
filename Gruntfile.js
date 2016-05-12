@@ -329,9 +329,9 @@ module.exports = function (grunt) {
     ngtemplates: {
       dist: {
         options: {
-          module: 'ngeid',
+          module: 'app.eid',
           htmlmin: '<%= htmlmin.dist.options %>',
-          usemin: 'scripts/ngEID.js'
+          usemin: 'scripts/ng-eid.js'
         },
         cwd: '<%= yeoman.app %>',
         src: 'views/{,*/}*.html',

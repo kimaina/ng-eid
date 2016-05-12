@@ -2,14 +2,15 @@
 
 /**
  * @ngdoc overview
- * @name openmrsNgresource
+ * @name openmrsNgEID
  * @description
- * # openmrsNgresource
+ * # openmrsNgEID
  *
  * Main module of the application.
  */
 angular
   .module('ngEID', [
     'ngCookies',
-    'ngResource'
+    'ngResource',
+    'app.eid'
   ]);

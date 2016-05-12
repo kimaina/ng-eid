@@ -1,5 +1,5 @@
 {
-    "name": "openmrsngresource",
+    "name": "ng-eid",
     "private": true,
     "dependencies": {
         "angular-environment": "^1.0.3",

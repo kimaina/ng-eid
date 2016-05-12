@@ -20,6 +20,7 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       // bower:js
+      'bower_components/jquery/dist/jquery.js',
       'bower_components/angular/angular.js',
       'bower_components/angular-cookies/angular-cookies.js',
       'bower_components/angular-resource/angular-resource.js',
@@ -28,6 +29,8 @@ module.exports = function(config) {
       'bower_components/restangular/dist/restangular.js',
       'bower_components/underscore/underscore.js',
       'bower_components/underscore.string/dist/underscore.string.js',
+      'bower_components/angular-cache/dist/angular-cache.js',
+      'bower_components/bootstrap/dist/js/bootstrap.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.module.js',
