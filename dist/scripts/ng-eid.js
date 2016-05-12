@@ -226,7 +226,7 @@
 
 })();
 
-angular.module('ngeid').run(['$templateCache', function($templateCache) {
+angular.module('ngEID').run(['$templateCache', function($templateCache) {
   'use strict';
 
   $templateCache.put('views/eid/eid-labs-summary.html',
