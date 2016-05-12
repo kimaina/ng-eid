@@ -1,11 +1,11 @@
 /*jshint -W098, -W030 */
 (function() {
   'use strict';
-  
+
   angular
-    .module('openmrs-ngresource.utils')
+    .module('app.eid')
       .filter('titlecase', titleCaseFilter);
-      
+
   function titleCaseFilter() {
     return function(s) {
         s = ( s === undefined || s === null ) ? '' : s;
@@ -13,5 +13,5 @@
             return ch.toUpperCase();
         });
     };
-  } 
+  }
 })();

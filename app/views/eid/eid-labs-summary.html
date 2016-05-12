@@ -1,0 +1,56 @@
+
+<div ng-disabled="isBusy">
+  <table class='table table-hover table-striped table-responsive'>
+    <thead>
+    <tr>
+      <th>Lab ID</th>
+      <th>Provider ID</th>
+      <th>MFL Code</th>
+      <th>Patient ID</th>
+      <th>Patient Names</th>
+      <th>Location</th>
+      <th>Date Collected</th>
+      <th>Date Received</th>
+      <th>Date Tested</th>
+      <th>Date Dispatched</th>
+      <th>Result</th>
+      <th>Final Result</th>
+    </tr>
+    </thead>
+    <tr ng-repeat="eidLabTest in eidLabTests">
+
+      <td>{{eidLabTest.LabID}}</td>
+      <td>{{eidLabTest.ProviderID}}</td>
+      <td>{{eidLabTest.MFLCode}}</td>
+      <td>{{eidLabTest.PatientID}}</td>
+      <td>{{eidLabTest.PatientNames}}</td>
+      <td>{{eidLabTest.AMRslocation}}</td>
+      <td>{{eidLabTest.DateCollected}}</td>
+      <td>{{eidLabTest.DateReceived}}</td>
+      <td>{{eidLabTest.DateTested}}</td>
+      <td>{{eidLabTest.DateDispatched}}</td>
+      <td>{{eidLabTest.Result}}</td>
+      <td>{{eidLabTest.FinalResult}}</td>
+    </tr>
+  </table>
+  <div ng-show='experiencedLoadingError'>
+    <p class="bg-danger" style="padding:4px;">
+      <b>
+        <span style="color:red;" class="glyphicon glyphicon-exclamation-sign"></span>An error occured while loading. Please try again.</b>
+    <p>
+  </div>
+  <div ng-show='!isBusy && !allDataLoaded'>
+    <button class="btn btn-info" ng-click="loadMoreLabTests()">
+      <span class="glyphicon glyphicon-refresh"></span>Load More</button>
+  </div>
+  <div ng-show='isBusy && !allDataLoaded'>
+    <img ng-show="isBusy" src="images/ajax-loader.gif" autofocus />
+    <b>Loading data...</b>
+  </div>
+  <div ng-show='allDataLoaded'>
+    <p class="bg-info" style="padding:4px;">
+      <b>
+        <span style="color:green;" class="glyphicon glyphicon-ok" />All lab tests loaded {{'[ ' + eidLabTests.length + ' ]'}}</b>
+    <p>
+  </div>
+</div>
